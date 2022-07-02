@@ -8,6 +8,6 @@ int main(){
     cin>>a;
     cin>>b;
     sum=a+b;
-    cout<<sum;
+    cout<<sum<endl;
 
 }
