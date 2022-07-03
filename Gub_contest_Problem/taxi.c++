@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int n;
+    long long int n;
     cin>>n;
     int array[n];
     for(int i=0;i<n;i++){
