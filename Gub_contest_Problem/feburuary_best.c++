@@ -10,15 +10,15 @@ void leap_year(int year,int year1,int i){
         */
 
         // as the number 4 multiple are leap year
-        int for_4 = (year1 / 4 )- ((year - 1) / 4);
+        int a = (year1 / 4 )- ((year - 1) / 4);
 
         // as the number 400 multiple of included also leap year
-        int for_400 = (year1 / 400) - ((year - 1) / 400);
+        int b = (year1 / 400) - ((year - 1) / 400);
         // for reduce not leap year multiple of 100;
-        int for_100 = (year1 / 100) - ((year - 1) / 100);
+        int c = (year1 / 100) - ((year - 1) / 100);
 
 
-       total_leap_year = for_4 + for_400 - for_100;
+       total_leap_year = a + b - c;
         cout << "Case "<<i<<": "<<total_leap_year<< endl;
 }
 int main(){
@@ -38,14 +38,14 @@ int main(){
 
             //start year and end year are not be changed 
         
-        if((month =="January" || month =="February") ){
+        if((month ==array[0] || month ==array[1]) ){
             year=year;;
         }
         else{
             year=year+1;
         }
         //end year are be decreasing as month and date is less than february 29
-        if(month1=="January" || (month1=="February" && date1< 29) ){
+        if(month1==array[0] || (month1==array[1] && date1< 29) ){
             year1=year1-1;
         }
         else{

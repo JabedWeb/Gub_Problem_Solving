@@ -6,7 +6,6 @@ int main(){
 
     string month,month1;
 
-  
 
 
     int date,year;
@@ -28,7 +27,7 @@ int main(){
             cout<<"Case " <<j << ": "<<flag<<endl;
            
         }
-        else if((month=="January" || month=="February") && (month1=="January" || month1=="February" ) && date1< 29){
+        else if((month=="January" || month=="February") && (month1=="January" || (month1=="February" && date1< 29)) ){
         for (int i=year;i<=year1-1;i++){
            if((i%4==0 && i%100!=0) || i%400==0){
             flag++;
