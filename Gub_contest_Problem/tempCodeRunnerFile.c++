@@ -1,2 +1,2 @@
 
-    int count=0;
+            if(str[i]==str[j]){

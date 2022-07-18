@@ -13,9 +13,9 @@ int main(){
         sum+=array[i];
     }
     int output=0;
-    for(int i=sum;i>=0;i=i-4){
+    for(int i=sum;i>0;i=i-4){
 
-        if(sum%4==0){
+        if(i%4==0){
          output++;
         }
         else{
@@ -23,7 +23,7 @@ int main(){
         }
     }
     if(sum%4==0){
-    cout<<output-1;
+    cout<<output;
     }
     else{
         cout<<output;
